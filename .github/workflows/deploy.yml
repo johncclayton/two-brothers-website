@@ -6,9 +6,13 @@ on:
       - main
       - gh-pages
 
+  workflow_dispatch: 
+    # Allows manual triggering of the workflow
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: gh-pages
 
     steps:
       - name: Checkout Code
