@@ -34,3 +34,7 @@ This project is automatically deployed to GitHub Pages.
 7.  **GitHub Pages Serves Site**: GitHub Pages is configured to serve the website from the content of the `gh-pages` branch.
 
 This ensures that any changes pushed to the `main` branch are automatically built and deployed to the live GitHub Pages site.
+
+## Configuration
+
+In the general settings for your repo, make sure the GitHub token/workflow has permissions to push to the `gh-pages` branch. This is typically set up in the repository settings under "Actions" and "General".
