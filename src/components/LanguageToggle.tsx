@@ -6,7 +6,7 @@ const LanguageToggle: React.FC = () => {
   const { language, changeLanguage } = useLanguage();
 
   const languages: { code: Language; label: string; flag: string }[] = [
-    { code: 'en', label: 'English', flag: '🇺🇸' },
+    { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' }
   ];
 
