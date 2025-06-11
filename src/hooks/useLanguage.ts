@@ -16,6 +16,7 @@ export const useLanguage = () => {
   const changeLanguage = (newLanguage: Language) => {
     setLanguage(newLanguage);
     localStorage.setItem('language', newLanguage);
+    window.location.reload(); // Add this line to refresh the page
   };
 
   const t = translations[language];
