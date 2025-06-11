@@ -38,3 +38,5 @@ This ensures that any changes pushed to the `main` branch are automatically buil
 ## Configuration
 
 In the general settings for your repo, make sure the GitHub token/workflow has permissions to push to the `gh-pages` branch. This is typically set up in the repository settings under "Actions" and "General".
+
+Test
