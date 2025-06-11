@@ -8,5 +8,5 @@ const base = isGitHubPages ? '/two-brothers-website/' : '/';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  '/two-brothers-website/'
+  base : '/two-brothers-website/',
 });
