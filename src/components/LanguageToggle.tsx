@@ -14,7 +14,7 @@ const LanguageToggle: React.FC = () => {
     <div className="relative group">
       <button className="flex items-center gap-2 px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
         <Globe size={20} />
-        <span className="hidden sm:inline">
+        <span className={`hidden sm:inline ${language === 'en' ? 'font-fredoka font-bold text-purple-600' : ''}`}>
           {languages.find(l => l.code === language)?.flag}
         </span>
       </button>
@@ -29,7 +29,7 @@ const LanguageToggle: React.FC = () => {
             }`}
           >
             <span className="text-lg">{lang.flag}</span>
-            <span className="font-medium">{lang.label}</span>
+            <span className={`font-medium ${lang.code === 'en' ? 'font-fredoka font-bold text-purple-600' : ''}`}>{lang.label}</span>
           </button>
         ))}
       </div>
